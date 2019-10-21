@@ -46,6 +46,7 @@ class _ClockState extends State<Clock> {
                     child: Image.asset('assets/face.png'),
                   ),
                 ),
+                Image.asset('assets/wedges.png'),
               ],
             ),
             Text(DateFormat.EEEE().format(_localTime), style: TextStyle(fontSize: 48)),
