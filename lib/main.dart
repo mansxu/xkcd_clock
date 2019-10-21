@@ -49,9 +49,9 @@ class _ClockState extends State<Clock> {
                 Image.asset('assets/wedges.png'),
               ],
             ),
-            Text(DateFormat.EEEE().format(_localTime), style: TextStyle(fontSize: 48)),
-            Text(DateFormat.yMMMMd().format(_localTime), style: TextStyle(fontSize: 20)),
-            Text(DateFormat.jm().format(_localTime), style: TextStyle(fontSize: 42)),
+            Flexible(flex: 2, child: Text(DateFormat.EEEE().format(_localTime), style: TextStyle(fontSize: 48))),
+            Flexible(flex: 1, child: Text(DateFormat.yMMMMd().format(_localTime), style: TextStyle(fontSize: 20))),
+            Flexible(flex: 2, child: Text(DateFormat.jm().format(_localTime), style: TextStyle(fontSize: 42))),
           ],
         ),
       );
